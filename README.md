@@ -1,2 +1,2 @@
-# YSG-HTML
-Practical HTML
+# YSG_HTML_CSS
+Practical HTML and CSS
