@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Universe - Our World</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="icon" type="image/icon" href="Data/telescope.png" >
+    
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+    }
+
+    iframe{
+            margin-left: 100px;
+            float: left;
+            border:none;
+        }
+
+    /* Style the header */
+    
+    .header {
+        background-image: url(Data/Pexels-Videos-3867.gif );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: white;
+    }
+
+    body {
+        background: url(Data/background.gif );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: #e67e22;
+
+    }
+
+    .header h1{
+        padding: 2%;
+        font-family:Harrington ;
+        font-size: 30px ;
+    }
+
+    .header p{
+        padding-bottom: 2%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-size: 20px ;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+        overflow: hidden;
+        background: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        list-style: none;
+    }
+
+    .topnav li {
+        display: inline-block;
+        padding: 10px;
+        font-family:cursive ;
+        font-size: 20px ;
+    }
+
+    .topnav li a{
+        text-decoration: none;
+        color: aqua;
+        margin-left: 25px;
+    }
+
+    .topnav #lr{
+        float: right;
+        margin-right: 25px;
+    }
+
+    .topnav li a:hover {
+        background-color: aqua;
+        color: black;
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+
+
+    /* Create 2 unequal columns that floats next to each other */
+    .column {
+        float: left;
+        padding: 10px;
+        
+
+    }
+
+    /* Left  column */
+    .column.side {
+        width: 50%;
+    }
+
+    /* .column.side a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+    } */
+
+    /* Middle column */
+    .column.middle {
+        width: 50%;
+        
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Footer */
+    .footer {
+        font-family:Harrington ;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        background: black;
+        text-align: center;
+        color: white;
+    }
+    .footer p{
+        padding: 5px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        
+
+    }
+    .footer a{
+        color: aqua;
+        padding: 5px;
+    }
+    form{
+        float: right;
+        font-size: large;
+        padding: 10px;
+        background:url(Data/eclipse-1492818_1920.jpg);
+        background-position: left;
+        background-repeat: no-repeat;
+        border-radius: 9px;
+        
+    }
+    input,select, textarea {
+        padding: 10px;
+        margin: 10px;
+        width: 70%;
+        border-radius: 9px;
+        font-weight: 700;
+    }
+
+input[type=text], select, textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: #e67e22;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  width: 90%;
+}
+
+input[type=submit]:hover {
+  background-color: #e67e22;
+  color: black;
+}
+
+</style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 > Our Universe - Our World</h1>
+        <p>lets know about our universe</p>
+    </div>
+
+    <nav class="topnav">
+        <li> <a href="index.html"> Home</a> </li>
+        <li> <a href="about.html"> About</a> </li>
+        <li> <a href="contact.html"> Contact</a> </li>
+        <li id="lr"> <a href="login.html"> Login</a> </li>
+    </nav>
+
+    <div class="row">
+        <div style="text-align:center;" >
+            <h2>Contact Us</h2><br>
+            <p> leave us a message:</p><br>
+          </div>
+   
+        <div class="column side">
+              <form action="/action_page.php">
+                <label for="name">Name : </label>
+                <input type="text" id="name" name="name" placeholder="Your name.."><br>
+                <label for="country">Country : </label>
+                <select id="country" name="country">
+                  <option value="india">India</option>
+                  <option value="australia">Australia</option>
+                  <option value="usa">USA</option>
+                </select><br>
+                <label for="subject">Subject : </label><br>
+                <textarea id="subject" name="subject" placeholder="Enter your message here.." style="height:100px"></textarea>
+                <input type="submit" value="Submit" >
+              </form>
+
+        </div>
+        
+        <div class="column middle">
+
+            <iframe src="Data/call2.png" width="450px" height="450px" name="my_frame"></iframe>
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2> Our Universe - Our World </h2>
+        <p>&copy;&nbsp;Terms and coditions applied  &nbsp; @ - 2020 - &nbsp;
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://in.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </p>
+    </div>
+
+</body>
+</html>

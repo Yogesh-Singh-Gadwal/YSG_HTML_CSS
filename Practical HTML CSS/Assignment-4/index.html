@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Our Universe - Our World</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="icon" type="image/icon" href="Data/telescope.png" >
+    
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+    }
+
+    .mcd-menu {
+        list-style: none;
+        height: auto;
+        border-radius: 2px;
+        width: 200px;
+
+        }
+
+    .mcd-menu li {
+        position: relative;
+        list-style: none;
+        
+        /* float:left; */
+        }
+        
+    .mcd-menu li a {
+        display: block;
+        text-decoration: none;
+        padding: 12px 20px;
+        color: white;
+        /* text-align: center; */
+        border-right: 1px solid #E7E7E7;
+        font-size: large;
+        
+        text-align: left;
+        height: 50px;
+        position: relative;
+        border-bottom: 1px solid #EEE;
+        }
+        
+    .mcd-menu li:hover > a {
+        color: #e67e22;
+        }
+        
+
+    .mcd-menu li ul,
+    .mcd-menu li ul li ul {
+        position: absolute;
+        height: auto;
+        min-width: 200px;
+        padding: 0;                
+        margin: 0;
+
+        border-top: 4px solid #e67e22;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 300ms linear;
+
+        /* top: 130px; */
+        z-index: 1000;
+        /* == */
+        left:280px;
+        top: 0px;
+        border-left: 4px solid #e67e22;
+        /* == */
+        }
+
+    .mcd-menu li ul:before {
+        content: "";
+        position: absolute;
+        /* top: -8px;
+        left: 23%;
+        border-bottom: 5px solid #e67e22;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent; */
+
+        /* == */
+        top: 25px;
+        left: -9px;
+        border-right: 5px solid #e67e22;
+        border-bottom: 5px solid transparent;
+        border-top: 5px solid transparent;
+        /* == */
+        }
+
+    .mcd-menu li:hover > ul,
+    .mcd-menu li ul li:hover > ul {
+        display: block;
+        opacity: 1;
+        visibility: visible;
+        /*top: 100px;*/
+        
+        /* == */
+        left:200px;
+        /* == */
+        }
+        /*.mcd-menu li ul li {
+        float: none;
+        }*/
+
+
+    .mcd-menu li ul li a {
+        padding: 10px;
+        text-align: left;
+        border: 0;
+        border-bottom: 1px solid #EEE;
+        border-right: 1px solid #E7E7E7;
+        
+        /* == */
+        height: auto;
+        /* == */
+        }
+
+    .mcd-menu li ul li ul {
+        left: 230px;
+        top: 0;
+        border: 0;
+        border-left: 4px solid #e67e22;
+        border-top: 4px solid #e67e22;
+
+        }  
+
+    .mcd-menu li ul li ul:before {
+        content: "";
+        position: absolute;
+        top: 15px;
+        /*left: -14px;*/
+        /* == */
+        left: -9px;
+        /* == */
+        border-right: 5px solid #e67e22;
+        border-bottom: 5px solid transparent;
+        border-top: 5px solid transparent;
+        }
+
+    .mcd-menu li ul li:hover > ul {
+        top: 0px;
+        left: 195px;
+        }
+
+    iframe{
+            margin-left: 100px;
+            border:none;
+        }
+    /* iframe {
+        background: #E7E7E7;
+    } */
+
+    
+
+
+    /* Style the header */
+    
+    .header {
+        background-image: url(Data/Pexels-Videos-3867.gif );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        color: white;
+    }
+
+    body {
+        background: url(Data/background.gif );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+
+    .header h1{
+        padding: 2%;
+        font-family:Harrington ;
+        font-size: 30px ;
+    }
+
+    .header p{
+        padding-bottom: 2%;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        font-size: 20px ;
+    }
+
+    /* Style the top navigation bar */
+    .topnav {
+        overflow: hidden;
+        background: black;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        list-style: none;
+    }
+
+    .topnav li {
+        display: inline-block;
+        padding: 10px;
+        font-family:cursive ;
+        font-size: 20px ;
+    }
+
+    .topnav li a{
+        text-decoration: none;
+        color: aqua;
+        margin-left: 25px;
+    }
+
+    .topnav #lr{
+        float: right;
+        margin-right: 25px;
+    }
+
+    .topnav li a:hover {
+        background-color: aqua;
+        color: black;
+        border-radius: 5px;
+        padding: 2px;
+    }
+
+
+
+    /* Create 2 unequal columns that floats next to each other */
+    .column {
+        float: left;
+        padding: 10px;
+
+    }
+
+    /* Left  column */
+    .column.side {
+        width: 35%;
+    }
+
+    /* .column.side a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: black;
+    } */
+
+    /* Middle column */
+    .column.middle {
+        width: 60%;
+        
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* Footer */
+    .footer {
+        font-family:Harrington ;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        padding: 5px;
+        background: black;
+        text-align: center;
+        color: white;
+    }
+    .footer p{
+        padding: 5px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+        
+
+    }
+    .footer a{
+        color: aqua;
+        padding: 5px;
+    }
+
+</style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h1 > Our Universe - Our World</h1>
+        <p>lets know about our universe</p>
+    </div>
+
+    <nav class="topnav">
+        <li> <a href="index.html"> Home</a> </li>
+        <li> <a href="about.html"> About</a> </li>
+        <li> <a href="contact.html"> Contact</a> </li>
+        <li id="lr"> <a href="login.html"> Login</a> </li>
+    </nav>
+
+    <div class="row">
+        <div class="column side">
+            <ul class="mcd-menu">
+
+                <li>
+                    <a href="Data/Solar_text.png" target="my_frame"><strong>Solar System</strong></a>
+                    <ul>
+                        <li><a href="Data/Solar_System-2.jpg" target="my_frame" >Picture</a></li>
+                        <li><a href="Data/Solar System 101 - National Geographic.mp4" target="my_frame">Video</a></li>
+                    </ul>
+                </li>
+
+                
+                <li><a href="Data/Galaxy_text.png" target="my_frame"><strong>Galaxy</strong></a>
+                    <ul>
+                        <li><a href="Data/Milkyway Galaxy.jpg" target="my_frame">Picture</a></li>
+                        <li><a href="Data/Our Universe Has Trillions of Galaxies, Hubble Study.mp4" target="my_frame">Video</a></li>
+                        <li><a href="Data/Universe_text-2.png" target="my_frame">Universe</a>
+                            <ul>
+                                <li><a href="Data/universe.jpg" target="my_frame">Picture</a></li>
+                                <li><a href="Data/Origins of the Universe 101 - National Geographic.mp4"target="my_frame">Video</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li><a href="Data/Earth_text.png" target="my_frame"><strong>Earth</strong></a>
+                    <ul>
+                        <li><a href="Data/earth.jpg" target="my_frame">Picture</a></li>
+                        <li><a href="Data/EARTH FROM SPACE- Like You've Never Seen Before.mp4" target="my_frame">Video</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="Data/Eclipse_text.png" target="my_frame"><strong>Eclipse</strong></a>
+                    <ul>
+                        <li><a href="Data/Solar_eclipse.png" target="my_frame">Solar Eclipse</a>
+                            <ul>
+                                <li><a href="Data/Solar-Eclipse-Landscape.jpg" target="my_frame">Picture</a></li>
+                                <li><a href="Data/Solar Eclipse 101 - National Geographic.mp4" target="my_frame">Video</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="Data/Lunar_eclipse.png" target="my_frame">Lunar Eclipse</a>
+                            <ul>
+                                <li><a href="Data/lunar-eclipse-wallpaper.jpg" target="my_frame">Picture</a></li>
+                                <li><a href="Data/Lunar Eclipse 101 - National Geographic.mp4" target="my_frame">Video</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        
+        <div class="column middle">
+
+            <iframe src="" width="850px" height="450px" name="my_frame"></iframe>
+
+            <!-- <iframe srcdoc="
+            <div > 
+                <h2>This goes in the iframe</h2>
+                <h2 >just some test to see the details</h2>
+            </div>" 
+            width="800px" height="450px" name="my_frame"></iframe> -->
+
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <h2> Our Universe - Our World </h2>
+        <p>&copy;&nbsp;Terms and coditions applied  &nbsp; @ - 2020 - &nbsp;
+        <a href="https://www.facebook.com/"><i class="fa fa-facebook-official"></i></a>
+        <a href="https://in.pinterest.com/"><i class="fa fa-pinterest-p"></i></a>
+        <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+        </p>
+    </div>
+
+</body>
+</html>
