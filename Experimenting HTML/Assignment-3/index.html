@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login </title>
+    <link rel="icon" type="image/icon" href="iconfinder_574_Cup_Coffee_Tea_Love_valentine_valentines_day_love_4171357.png" >
+    <style>
+
+        body {
+            margin : 0;
+            background: url(pexels-photo-867470.jpeg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        body #title {
+            color: aqua;
+            text-align: center;
+            font-size: 20px ;
+            font-style: oblique;
+            border: 3px solid aqua;
+            margin-top: 10px;
+            background: black;
+            opacity: 0.7;
+        }
+        div#login{
+            background: url(https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+            background-size:contain;
+            height: auto;
+            width:  25%;
+            border: 3px solid aqua;
+            margin-left: 60%;
+            margin-top: 10%;
+        }
+        div#overlay{
+            display: flex;
+            background-color: black;
+            opacity: 0.7;
+        }
+        div#one{
+            margin-left: 50px;
+            color:aqua;
+        }
+        div#one h2{
+            text-align: center;
+        }
+        div#one input{
+            padding: 5px;
+            margin: 10px;
+            font-size: large ;
+            background-color: white;
+        }
+        div#one #button{
+            display: block;
+            background-color: white;
+        }
+        div#one #button:hover{
+            display: block;
+            border: 2px solid tomato;
+            color: white;
+            background-color: black;
+            font-style: italic;
+        }
+        a{
+            color:yellow;
+        }
+    </style>  
+</head>
+
+<body>
+    <div class="bg-image"></div>
+    <div id="title">
+        <h2>Welcome to YSG Cafe </h2>
+    </div>
+    
+    <div id="login"> 
+        <div id="overlay">
+            <div id="one">
+                <h2 >Login Page</h2>
+                <form method="" action="" target="" autocomplete="off">
+                    <br>        
+                    <label>Name :</label><br>
+                    <input type="text" name="uname" placeholder="Enter User Name" required/><br>
+                    <label>Password :</label><br>
+                    <input type="password" name="upass" placeholder="Enter Password" required/><br>
+                    
+                    <input type="radio" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" value="others">
+                    <label for="others">Others</label><br>
+            
+            
+                    <input type="checkbox" name="v1" value="bike">
+                    <label>Bike</label>
+                    <input type="checkbox" name="v2" value="car">
+                    <label>Car</label>
+                    <input type="checkbox" name="v3" value="SUV">
+                    <label>SUV</label><br>
+            
+                    <input type="submit" id="button">
+                    <p>Forgot <a href="#" title="Get new Password"> Password?</a></p>
+                    
+                    <br>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
