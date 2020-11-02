@@ -1,0 +1,38 @@
+<!--Opacity   Example-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.one {
+  background: url(nature.jpg);
+  border: 2px solid black;
+ }
+
+div.two {
+  margin: 60px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.0;
+  filter: alpha(opacity=30);
+}
+div.two:hover{
+   opacity: 0.8;
+}
+div.two p {
+  margin: 25%;
+  font-weight: bold;
+  color: #000000;
+}
+</style>
+</head>
+<body>
+<br><br>
+<h1>Opacity</h1>
+<br><br>
+<div class="one">
+  <div class="two">
+    <p>Hi this is micky mouse from world of disney.</p>
+  </div>
+</div>
+</body>
+</html>

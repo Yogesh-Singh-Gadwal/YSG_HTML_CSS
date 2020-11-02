@@ -1,0 +1,46 @@
+<!-- Transitions
+delay   ==>  -webkit-transition: width 3s; /* Safari */
+             -webkit-transition-delay: 1s; /* Safari */
+
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 150px;
+    height: 50px;
+    background: pink;
+    transition: width 2s, height 4s;
+}
+
+div:hover {
+    width: 600px;
+    height: 200px;
+	
+}
+
+div#one {
+    width: 100px;
+    height: 80px;
+    background: powderblue;
+    transition: width 3s;
+    
+}
+
+div#one:hover {
+    width: 300px;
+	transition-delay: 1s;	
+}
+</style>
+</head>
+<body>
+
+<div></div>
+
+<br><br><br><br>
+<div id="one">linear</div><br>
+
+
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!-- Text Effects 
+text-overflow
+word-wrap
+word-break
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+p.one {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+p.two {
+    white-space: nowrap; 
+    width: 200px; 
+    border: 1px solid #000000;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+p.three {
+    width: 140px; 
+    border: 1px solid #000000; 
+    word-wrap: break-word;	
+}
+
+p.four {
+    width: 140px; 
+    border: 1px solid #000000;
+    word-break: keep-all;
+}
+
+p.five {
+    width: 140px; 
+    border: 1px solid #000000;
+    word-break: break-all;
+}
+
+</style>
+</head>
+<body>
+<br><br><br><br>
+<!--text-overflow: clip: -->
+<p class="one">Hi this is micky mouse ,Welcome to the world of Disney land</p>
+
+<br><br><br><br>
+<br><br><br><br>
+<!--text-overflow: ellipsis: -->
+<p class="two">Hi this is micky mouse ,Welcome to the world of Disney land</p>
+
+<br><br><br><br><br><br><br><br>
+<!-- Word Without Wrapping -->
+<p class="three">Hi this is micky mouse ,Welcome to the world of Disney land
+Disneyland Park, originally Disneyland, is the first of two theme parks built at the Disneyland Resort in Anaheim, California, opened on July 17, 1955. It is the only theme park designed and built under the direct supervision of Walt Disney.
+</p>
+
+<br><br><br><br><br><br><br><br>
+<!-- Word Wrapping -->
+<p class="four">Hi this is micky mouse ,Welcome to the world of Disney land
+Disneyland Park, originally Disneyland, is the first of two theme parks built at the Disneyland Resort in Anaheim, California, opened on July 17, 1955. It is the only theme park designed and built under the direct supervision of Walt Disney.
+</p>
+
+<br><br><br><br><br><br><br><br>
+<!-- Word Wrapping -->
+<p class="five">Hi this is micky mouse ,Welcome to the world of Disney land
+Disneyland Park, originally Disneyland, is the first of two theme parks built at the Disneyland Resort in Anaheim, California, opened on July 17, 1955. It is the only theme park designed and built under the direct supervision of Walt Disney.
+</p>
+<br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br>
+</body>
+</html>

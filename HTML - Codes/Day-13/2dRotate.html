@@ -1,0 +1,87 @@
+<!-- The matrix() Method 
+        -ms-transform: matrix(1, -0.3, 0, 1, 0, 0); /* IE 9 */
+        -webkit-transform: matrix(1, -0.3, 0, 1, 0, 0); /* Safari */
+		
+		 -ms-transform: matrix(1, 0, 0.5, 1, 150, 0); /* IE 9 */
+         -webkit-transform: matrix(1, 0, 0.5, 1, 150, 0); /* Safari */
+
+		 <!-- 1=>scale horizontal, 2=>rotate x axis, 
+		 3=>rotate Y axis  4=>scale vertical, 
+	        5=>margin-left, 6=margin-top>
+      -->
+	  <!-- 1= scale horizontal  , 2= rotateX , 3= rotateY ,
+	4= scale vertical , 5 = margin-left , 6= margin-top --> 
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#one {
+    
+    transform: matrix(1, 0.2, 0, 1, 13, 17); 
+	<!-- 1.scale vertical , 2.rotate X , 3. rotate Y
+         4.scale horizontal, 5.margin left, 6.margin top --> 	
+}
+
+div#two{
+   
+    transform: matrix(1, 0, 0.5, 1, 150, 0); 
+}
+div#three{
+      transform: rotateX(180deg);
+	
+ }
+ div#four{
+      
+	  transform: rotateY(130deg);
+	  
+ }
+ div#five{
+      margin-top:300px;
+	  transform: rotateZ(90deg);
+ }
+</style>
+</head>
+<body>
+
+<div>
+Disneyland Park, 
+	originally Disneyland,Disneyland Park,
+</div>
+
+<div id="one">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park,
+</div>
+
+<div id="two">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park,
+</div>
+<br><br>
+<div id="three">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park,
+</div>
+<br><br>
+<div id="four">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park,
+</div>
+<br><br>
+<div id="five">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park,
+</div>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+<br><br><br><br><br><br>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!-- Animations --2
+
+
+animation-duration ==>   /* Chrome, Safari, Opera */
+                          @-webkit-keyframes example {
+                          0%   {background-color: red;}
+                          25%  {background-color: yellow;}
+                          50%  {background-color: blue;}
+                          100% {background-color: green;}
+}
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+	margin-top:150px;
+  
+    animation-name: myone;
+    animation-duration: 12s;
+}
+
+@keyframes myone {
+    0%   {background-color: red;}
+	6%   {margin-left:200px;}
+	9%   {transform: rotateX(180deg);}
+	12%   {background-color: grey;}
+	15%   {background-color: violet;}
+	18%   {margin-left:350px;}
+    25%  {background-color: yellow;}
+	31%   {margin-left:600px;}
+	38%   {background-color: pink;}
+	45%   {margin-top:250px;}
+    50%  {background-color: blue;}
+	65%   {margin-top:270px;}
+	75%   {background-color: orange;}
+	85%   {margin-top:340px;}
+    100% {background-color: green;}
+}
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>

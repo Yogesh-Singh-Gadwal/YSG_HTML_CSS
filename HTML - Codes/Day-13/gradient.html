@@ -1,0 +1,91 @@
+<!--gradient
+defines two types of gradients:
+
+Linear Gradients (goes down/up/left/right/diagonally)
+Radial Gradients (defined by their center)
+background: radial-gradient(closest-side at 60% 55%, red, yellow)
+background: radial-gradient(farthest-side at 60% 55%, red, yellow,
+background: radial-gradient(closest-corner at 60% 55%, red, yellow,
+background: radial-gradient(farthest-corner at 60% 55%, red, yellow,
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#one {
+    height: 200px;
+    background: red; 
+    background: linear-gradient(to right, powderblue , yellow, orange, pink);
+	
+}
+#two {
+    height: 200px;
+    background: red; 
+    background: linear-gradient(to bottom , powderblue, yellow); 
+}
+#three {
+  height: 200px;
+  background: linear-gradient(powderblue, yellow, green);
+}
+
+#four {
+    height: 55px;
+    background: red; 
+    background: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet); 
+}
+
+#six {
+    height: 150px;
+    width: 200px;
+    background: powderblue; 
+    background: radial-gradient(powderblue, yellow, red); 
+}
+
+#seven {
+    height: 150px;
+    width: 200px;
+    background: powderblue; 
+    background: radial-gradient(circle, powderblue, yellow, red); 
+}
+</style>
+</head>
+<body>
+
+<h1>Linear Gradient</h1>
+
+
+<div id="one"></div>
+
+<br><br>
+
+<div id="two"></div>
+
+<br><br>
+
+<div id="three"></div>
+
+<br><br>
+
+
+<div id="four" style="text-align:center;margin:auto;color:black;font-size:40px;font-weight:bold">
+Micky Mouse
+</div>
+<br><br>
+
+<h1>Radial Gradient </h1>
+
+<h2>Ellipse (this is default):</h2>
+<div id="six"></div>
+
+<h2><strong>Circle:</strong></h2>
+<div id="seven"></div>
+
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+</body>
+</html>

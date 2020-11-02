@@ -1,0 +1,68 @@
+<!--Pseudo-classes -->
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+/* unvisited link */
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+
+div#one {
+    background-color: green;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+div#one:hover {
+    background-color: yellow;
+	color: red;
+}
+
+
+p#two {
+    display: none;
+    background-color: yellow;
+    padding: 20px;
+}
+
+div#two:hover p {
+    display: block;
+}
+
+
+</style>
+</head>
+<body>
+<br><br>
+<p><b><a href="#" target="_blank">This is a link</a></b></p>
+
+<br><br><br>
+
+<div id="one">Mouse Over Me</div>
+
+<br><br><br>
+
+<div id="two">Hover over me to show the p element
+  <p id="two">Tada! Here I am!</p>
+</div>
+
+<br><br><br>
+</body>
+</html>

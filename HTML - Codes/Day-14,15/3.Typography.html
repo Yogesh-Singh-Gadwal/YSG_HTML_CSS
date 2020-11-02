@@ -1,0 +1,189 @@
+<!-- Typography
+Default Settings
+Bootstrap 4 uses a default font-size of 16px, and its line-height is 1.5.
+
+The default font-family is "Helvetica Neue", Helvetica, Arial, sans-serif.
+
+In addition, all <p> elements have margin-top: 0 and margin-bottom: 1rem (16px by default).
+
+--------------------------------------------------------
+
+Display Headings
+Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight),
+ and there are four classes to choose from: .display-1, .display-2, .display-3, .display-4
+
+--------------------------------------------------------
+
+<small>
+In Bootstrap 4 the HTML <small> element is used to create a lighter, secondary text in any heading:
+
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br><br>
+<br><br><br><br><br>
+
+
+<div class="container">
+  <h1>h1  heading (2.5rem = 40px)</h1>
+  <h2>h2  heading (2rem = 32px)</h2>
+  <h3>h3  heading (1.75rem = 28px)</h3>
+  <h4>h4  heading (1.5rem = 24px)</h4>
+  <h5>h5  heading (1.25rem = 20px)</h5>
+  <h6>h6  heading (1rem = 16px)</h6>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<!--Display headings are used to stand out more than normal headings (larger font-size and lighter font-weight):  -->
+<div class="container">
+  <h1>Display Headings</h1>
+  <br>
+  <h1 class="display-1"><b><i>Micky<small>Mouse 1</small></i></b></h1>
+  <h1 class="display-2">MickyMouse 2</h1>
+  <h1 class="display-3">MickyMouse 3</h1>
+  <h1 class="display-4">MickyMouse 4</h1>
+</div>
+<br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<!--The small element is used to create a lighter, secondary text in any heading:  -->
+<div class="container">
+  <h1>Lighter, Secondary Text</h1><br>
+  <h1>Hi Welcome to DisneyWorld <small>Micky Mouse</small></h1>
+  <h2>Hi Welcome to DisneyWorld <small>Micky Mouse</small></h2>
+  <h3>Hi Welcome to DisneyWorld <small>Micky Mouse</small></h3>
+  <h4>Hi Welcome to DisneyWorld <small>Micky Mouse</small></h4>
+  <h5>Hi Welcome to DisneyWorld <small>Micky Mouse</small></h5>
+  <h6>Hi Welcome to DisneyWorld <small>Micky Mouse</small></h6>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+<!-- <mark>
+Bootstrap 4 will style the HTML <mark> element with a yellow background color and some padding: 
+<mark> can provide diff color with style -->
+<div class="container">
+  <h1>Highlight Text</h1>    
+  <p>Hi Welcome to DisneyWorld <mark>Land</mark> of love.</p>
+  <p>Hi Welcome to DisneyWorld <mark style="background-color:red;">Land</mark> of love.</p>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<!-- Bootstrap 4 will style the HTML <abbr> element with a dotted border bottom: -->
+<!-- The abbr element is used to mark up an abbreviation or acronym: use style for text decoration-->
+<div class="container">
+  <h1>Abbreviations</h1>
+  <br><br>
+  <p>Welcome to DisneyWorld <abbr title="DisneyWorld">Micky</abbr> Love of land</p>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<!-- <blockquote>
+Add the .blockquote class to a <blockquote> when quoting blocks of content from another source: -->
+<!-- The blockquote element is used to present content from another source:-->
+<div class="container">
+  <h1>Blockquotes</h1>
+  <p></p>
+  <blockquote class="">
+    <p>It's our Mickey's Birthday and we're going to celebrate all of November! 
+	Watch this foot-tapping Magic Mix that will make you want to get up and dance! Happy Birthday Mickey!</p>
+    <footer class="blockquote-footer">Disney World Land of Love</footer>
+  </blockquote>
+</div>
+
+<br><br>
+
+<div class="container">
+  <h1>Blockquotes</h1>
+  <p></p>
+  <blockquote class="blockquote">
+    <p>It's our Mickey's Birthday and we're going to celebrate all of November! 
+	Watch this foot-tapping Magic Mix that will make you want to get up and dance! Happy Birthday Mickey!</p>
+    <footer class="blockquote-footer">Disney World Land of Love</footer>
+  </blockquote>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<!-- <code>
+Bootstrap 4 will style the HTML <code> element in the following way: -->
+<!-- Inline snippets of code should be embedded in the code element: -->
+
+
+<div class="container">
+  <h1>Code Snippets</h1>
+  <br><br>
+  <p>Welcome to DisneyWorld: <code style="color:green;">Land</code>, <code>of Micky</code>,
+  Mouse <code>Love</code> Watch this foot-tapping Magic Mix.</p>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<!-- <kbd>
+Bootstrap 4 will style the HTML <kbd> element in the following way: -->
+<!--To indicate input that is typically entered via the keyboard, use the kbd element: -->
+<div class="container">
+  <h1>Keyboard Inputs</h1>
+  <br><br>
+  <p>Use <kbd>crtl + f</kbd> to open the Print----> DisneyWorld.</p>
+</div>
+
+<br><br><br><br><br>
+<br><br><br><br><br>
+<br><br><br><br><br>
+
+
+<!-- <pre>
+Bootstrap 4 will style the HTML <pre> element in the following way: -->
+
+<div class="container">
+<h1>Multiple Code Lines</h1>
+<p>For multiple lines of code, use the pre element:</p>
+<pre> 
+It's our Mickey's Birthday and
+ we're going to celebrate all of
+ November!
+ Watch this foot-tapping Magic 
+ Mix that                      will make you 
+ want to get up and dance! 
+ Happy Birthday Mickey!
+</pre>
+</div>
+<br><br><br><br>
+<br><br><br><br>
+
+
+</body>
+</html>

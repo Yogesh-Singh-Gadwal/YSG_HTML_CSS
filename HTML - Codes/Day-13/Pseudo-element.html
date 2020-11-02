@@ -1,0 +1,76 @@
+<!--Pseudo-element
+pseudo-element is used to style specified parts of an element.
+
+For example, it can be used to:
+
+Style the first letter, or line, of an element
+Insert content before, or after, the content of an element
+ -->
+ <!DOCTYPE html>
+<html>
+<head>
+<style>
+p.one::before {
+    content: url(ffff.gif);
+	
+  }
+p.one::after {
+    content: url(ffff.gif);
+}
+p::first-line {
+    color: blue;
+    font-variant: small-caps;
+	<!-- font properties
+         color properties
+         background properties
+         word-spacing
+         letter-spacing
+         text-decoration
+         vertical-align
+         text-transform
+         line-height
+         clear  -->
+}
+
+p::first-letter {
+    color: green;
+    font-size: xx-large;
+<!--
+	font properties
+    color properties 
+    background properties
+    margin properties
+    padding properties
+    border properties
+    text-decoration
+    vertical-align (only if "float" is "none")
+    text-transform
+    line-height
+    float
+    clear
+	     -->
+}
+
+</style>
+</head>
+<body>
+<br><br><br><br><br>
+<br><br>
+<p class="one">Tendulkar introduction.</p>
+<br><br>
+<p>Ramesh named Tendulkar after his favourite music director, Sachin Dev Burman.
+Tendulkar was born at Nirmal Nursing Home in Dadar,
+ Bombay on 24 April 1973[citation needed] to a Rajapur Saraswat Brahmin family.[24]
+ His father, Ramesh Tendulkar, was a well-known Marathi novelist and his mother, Rajni, worked in the insurance industry.
+ [25] Ramesh named Tendulkar after his favourite music director, Sachin Dev Burman. 
+ Tendulkar has three elder siblings: two half-brothers Nitin and Ajit, and a half-sister Savita. 
+ They were Ramesh's children from his first marriage.[citation needed]
+
+Tendulkar played as a youngster with his brother, Ajit, for Sahitya Sahawas society’s cricket team at Bandra East.
+ Ajit is credited by Sachin for playing a pivotal role in his life.[26]
+ Ramakant Achrekar was impressed with Tendulkar's talent and advised him to shift his schooling to Sharadashram Vidyamandir (English)
+ High School,[1] a school at Dadar which had a dominant cricket team and had produced many notable cricketers.
+ Prior to this, Tendulkar had attended the Indian Education Society's New English School in Bandra (East).[27] 
+</p>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!-- transform-origin Property
+ -ms-transform: rotate(45deg); /* IE 9 */
+    -ms-transform-origin: 20% 40%; /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    -webkit-transform-origin: 20% 40%; /* Chrome, Safari, Opera */
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+#one {
+    position: relative;
+    height: 200px;
+    width: 200px;
+    margin: 100px;
+    padding: 10px;
+    border: 1px solid black;
+	background-color:yellow;
+	border-radius: 50px; 
+}
+#two {
+    padding: 30px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: powderblue;
+    height: 20px;
+    transform: rotate(45deg);
+    transform-origin: 190% 199%;
+	border-radius: 90px;
+	}
+
+</style>
+</head>
+<body>
+
+<div id="one"><p>DIsney World</p>
+  <div id="two">mickyyy</div>
+</div>
+</body>
+</html>

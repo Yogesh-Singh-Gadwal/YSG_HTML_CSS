@@ -1,0 +1,93 @@
+<!-- Navigater with only responsive
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+ul.one li.right, 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="" content="width=device-width, initial-scale=1.0">
+<style>
+body {
+      margin: 0;
+	  }
+ul.one {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #EAECEE; <!--grey -->
+}
+
+ul.one li {float: left;}
+
+ul.one li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 16px 26px;
+    text-decoration: none;
+}
+
+ul.one li a:hover:not(#two) {background-color: powderblue;}
+
+
+ul.one li a#two {background-color: orange;}
+
+
+
+@media screen and (max-width: 900px){
+    
+    ul.one li {float: none;}
+}
+</style>
+</head>
+<body>
+
+<ul class="one">
+  <li><a id="two" href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+</ul>
+<br><br><br><br><br>
+<div style="padding:20px;margin-top:30px;background-color:pink;height:1500px;">
+   <h3>Hello micky welcome to world of disney</h3>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+  <br><br>
+    <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+   <br><br>
+  <p>Micky mouse World of Disney......</p>
+  <br><br>
+</div>
+</body>
+</html>

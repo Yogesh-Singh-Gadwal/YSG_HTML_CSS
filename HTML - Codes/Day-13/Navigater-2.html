@@ -1,0 +1,87 @@
+<!-- Navigater with responsive ness -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="" content="width=device-width, initial-scale=1.0">
+<style>
+body {margin: 0;}
+
+ul.one {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+ul.one li a {
+    display: block;
+    color: red;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+ul.one li a.three {
+    background-color: orange;
+    color: yellow;
+}
+
+ul.one li a:hover:not(.three) {
+    background-color: powderblue;
+    color: white;
+}
+
+div.two {
+    margin-left: 45%;
+    padding: 10px 26px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 1000px) {
+    ul.one {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.one li a {
+        float: left;
+        padding: 15px;
+    }
+    div.two {margin-left: 0;}
+}
+
+@media screen and (max-width: 800px) {
+    ul.one li a {
+        text-align: center;
+        float:none;
+		display:block;	
+    }
+	
+}
+</style>
+</head>
+<body>
+
+<ul class="one">
+  <li><a class="three" href="#">Home</a></li>
+  <li><a href="#">News</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">About</a></li>
+</ul>
+
+<div class="two">
+  <h3>Hello micky welcome to world of disney</h3>
+  <p>Micky mouse World of Disney......</p>
+  <p>Micky mouse World of Disney......</p>
+  <p>Micky mouse World of Disney......</p>
+  <p>Micky mouse World of Disney......</p>
+  <p>Micky mouse World of Disney......</p>
+  <p>Micky mouse World of Disney......</p>
+  <p>Micky mouse World of Disney......</p>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!-- 2D Transforms 
+translate() ====>  -ms-transform: translate(50px,100px); /* IE 9 */
+                   -webkit-transform: translate(50px,100px); /* Safari */
+				   
+rotate()    ====>  -ms-transform: rotate(20deg); /* IE 9 */
+                   -webkit-transform: rotate(20deg); /* Safari */ 
+				   
+scale()     ====>   -ms-transform: scale(2,3); /* IE 9 */
+                    -webkit-transform: scale(2,3); /* Safari */
+					
+skewX()     ====>   -ms-transform: skewX(20deg); /* IE 9 */
+                    -webkit-transform: skewX(20deg); /* Safari */ 
+
+skewY()     ====> -ms-transform: skewY(20deg); /* IE 9 */
+                  -webkit-transform: skewY(20deg); /* Safari */
+
+matrix()    ====> -ms-transform: skew(20deg,10deg); /* IE 9 */
+                  -webkit-transform: skew(20deg,10deg); /* Safari */
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 300px;
+    height: 100px;
+    background-color: orange;
+    border: 1px dotted black;
+}
+div#one {      
+    transform: translate(80px,153px); /*Standard syntax */
+        }
+
+div#two {   
+       margin-left:200px;  
+	   transform: rotate(30deg); /* Standard syntax */ 
+          }
+div#three {   
+       margin-left:200px;  
+	   transform: rotate(-30deg); /* Standard syntax */ 
+          }
+div#four{
+        margin-left:200px;  
+		<!--sacle means width and height with scale 
+		   transform: scale(0.5,0.5); 
+		-->        
+        }
+div#five{	
+        margin-left:220px;	
+		transform: skewX(20deg);
+		} 
+div#six{
+        margin-top:54px;
+        margin-left:238px;
+        transform: skewY(20deg);
+       }
+div#seven{
+          margin-top:50px;
+          margin-left:240px;
+          transform: skew(20deg,30deg); /* Standard syntax */
+		  <!-- transform: skew(20deg); -->
+		 }
+</style>
+</head>
+<body>
+
+<div id="one">
+Disneyland Park, 
+	originally Disneyland,
+</div>
+
+<div id="two">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,
+</div>
+<div id="three">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,
+</div>
+<br><br><br><br><br><br><br><br><br>
+<div id="four">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,
+</div>
+<div id="five">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,
+</div>
+<div id="six">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,
+</div>
+<br><br><br><br><br><br>
+<p>------------------------------------------</p>
+<div id="seven">
+Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,Disneyland Park, 
+	originally Disneyland,
+</div>
+<br><br><br><br><br><br><br><br><br>
+</body>
+</html>

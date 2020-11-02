@@ -1,0 +1,56 @@
+<!-- Animations 
+@keyframes Rule   ==>    -webkit-animation-name: myone; /* Chrome, Safari, Opera */
+                         -webkit-animation-duration: 4s; /* Chrome, Safari, Opera */
+						  
+						  /* Chrome, Safari, Opera */
+                          @-webkit-keyframes myone {
+                          from {background-color: red;}
+                           to {background-color: yellow;}
+}
+
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    margin-left:0px;
+	margin-top:350px;
+    -webkit-animation-name: myone;
+    -webkit-animation-duration: 12s;
+}
+
+/* Standard syntax */
+@keyframes myone {
+    from {margin-left:0px;
+	      margin-top:350px;
+	      background-color:red; 
+		  }
+    to {margin-left:740px;
+	   margin-top:150px;
+	   background-color:yellow;
+	   width: 40px;
+    height: 20px;
+	transform: rotate(-30deg);
+	border-radius:45px;
+	    }
+}
+</style>
+</head>
+<body>
+
+<div></div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
