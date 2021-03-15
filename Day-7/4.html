@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            padding: 25px;
+            background-color: lightblue;
+            border:none;
+            border-radius: 10px;
+            outline:none;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+          
+           function startstop()
+           {
+              var v1 = document.getElementById('v1');
+              if(v1.paused)
+                v1.play();
+              else
+                v1.pause();    
+           }
+         
+    </script>
+</head>
+<body>
+    
+    <h1>Video</h1>
+    <br>
+
+    <video id="v1" width="700px" height="300px">
+        <source src="Bharat Ane.webm" type="video/mp4"></source>
+    </video>
+
+    <br><br>
+    <button onclick="startstop();"><b>Start/Stop</b></button>
+</body>
+</html>

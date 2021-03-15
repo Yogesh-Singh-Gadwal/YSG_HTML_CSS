@@ -1,0 +1,64 @@
+<!-- counter -->
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    counter-reset: section;
+}
+h2::before {
+    counter-increment: section;
+    content: "BMW " counter(section) ": ";
+}
+ol {
+    counter-reset: section;
+    list-style-type: none;
+}
+li::before {
+    counter-increment: section;
+    content: counters(section,".") " ";
+}
+</style>
+</head>
+<body>
+
+<h1>Micky mouse from Disney World</h1>
+<h2>Micky mouse from Disney World</h2>
+<h2>Micky mouse from Disney World</h2>
+<h2>Micky mouse from Disney World</h2>
+
+<br><br><br><br><br>
+
+<ol>
+  <li>item</li>
+  <li>item     
+          <ol>
+             <li>item</li>
+             <li>item</li>
+             <li>item
+                          <ol>
+                              <li>item</li>
+                              <li>item</li>
+							      <ol>
+								     <li>item</li>
+								  </ol>
+                              <li>item</li>
+                          </ol>
+             </li>
+             <li>item</li>
+         </ol>
+   </li>
+    <li>item</li>
+    <li>item</li>
+</ol>
+   <ol>
+     <li>item</li>
+     <li>item</li>
+   </ol>
+   
+   <br><br><br><br><br>
+   <br><br><br><br><br>
+   
+   
+</body>
+</html>

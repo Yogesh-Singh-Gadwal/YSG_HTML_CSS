@@ -1,0 +1,574 @@
+CSS Tutorial
+
+CSS is a language that describes the style of an HTML document.
+
+
+
+What is CSS?
+CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, 
+paper, or in other media
+
+
+
+CSS Syntax
+             Declaration
+selector  { property:value }
+
+Syntax 
+
+      selector{  property : value; }
+
+      selector{ property :value; property :value; }
+
+      selector{ 
+                 property :value;
+                 property :value;
+               }
+
+      h1{
+          color:red;
+          text-align:center;
+        }
+
+
+
+CSS Comments
+
+/* -------- */
+
+
+
+
+
+
+
+
+CSS Selector
+1. Element Selector
+2. Id Selector
+3. Class Selector
+4. Multiple Tag Contain Same Class
+5. class ="micky"
+    class ="micky mouse"
+6. Universal Selector (*)
+7. Grouping Selector (a,b,c,d)
+
+
+
+
+
+
+
+
+Three Ways to Insert CSS
+There are three ways of inserting a style sheet:
+
+External CSS
+Internal CSS
+Inline CSS
+
+
+
+
+Cascading Order
+
+Inline style (inside an HTML element)
+External and internal style sheets (in the head section)
+Browser default
+
+
+
+
+
+-----------------------------------------------------------------------
+
+
+
+
+
+Text Properties
+
+1.Color,Background-color
+2.Align(center,left,right,justify)
+3.decoration(none,overline,line-through,underline)
+4.transform(upper,lower,capitalize)
+5.text-indent
+6.letter-spacing
+7.line-height: 0.5;
+8.direction: rtl;(bdo) , unicode-bidi: bidi-override;
+9.word-spacing: 10px;
+10.text-shadow: 3px 2px red;
+                          2px 2px 5px red;
+11.vertical-align: top;middle,bottom(img with text)
+
+
+<p>Disney 
+           <img class="one" src=" " alt="" width="" height="">
+ </p>
+<br>
+
+
+
+
+
+
+
+Font Properties
+----------------			
+1. font style (normal,italic,oblique)
+2. font family
+3. font size(px,2.5em,%
+4. font-weight(normal, bold)
+5. font-variant(normal, small-caps)
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+CSS Colors
+---------------------
+Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values.
+
+
+
+1. normal =>red,green,Tomato,DodgerBlue
+2. Text Color => color:red
+3. RGB => rgb(red, green, blue) the intensity of the color between 0 and 255.
+4. HEX Value =>hexadecimal value
+5. HSL => hsl(hue, saturation, lightness)
+              Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.
+              Saturation is a percentage value, 0% means a shade of gray, and 100% is the full color.
+              Lightness is also a percentage, 0% is black, 50% is neither light or dark, 100% is white
+
+Eg => hsl(0, 100%, 50%)
+      hsl(248, 53%, 58%)
+
+
+
+Saturation
+Saturation can be described as the intensity of a color.
+100% is pure color, no shades of gray
+50% is 50% gray, but you can still see the color.
+0% is completely gray, you can no longer see the color.
+
+
+
+A => alpha-> which specifies the opacity for a color => 0.0 - 1.0
+
+RGBA =>rgba(red, green, blue, alpha)
+       rgba(255, 99, 71, 0.2)
+       rgba(255, 99, 71, 0.4)
+       rgba(255, 99, 71, 0.8)
+
+
+HSLA =>hsla(hue, saturation, lightness, alpha)
+       hsla(9, 100%, 64%, 0.4)
+       hsla(9, 100%, 64%, 0.6)
+       hsla(9, 100%, 64%, 0.8)
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+CSS Backgrounds
+
+The CSS background properties are used to define the background effects for elements.
+
+CSS background properties:
+
+1. background-color
+2. background-image        Syntax =>background-image: url("micky.png");
+3. background-repeat       Syntax =>background-repeat: repeat-x;   background-repeat: repeat-y;   or no-repeat;
+4. background-attachment   Syntax =>background-attachment: fixed;  or scroll;  
+5. background-position     Syntax =>background-position: right top; 
+6. background-size           Syntax =>background-size: 300px 100px; or auto;
+
+
+
+CSS background - Shorthand property
+                 background: #hexacode url("micky.png") no-repeat right top;
+
+
+
+
+
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+CSS Borders
+
+CSS Border Properties
+
+1. border-style (border- top,right,bottom,left -style)
+  
+   dotted 
+   dashed 
+   solid 
+   double 
+   groove 
+   ridge
+   inset 
+   outset 
+   none 
+   hidden 
+
+
+2. border-width
+3. border-color
+4. border-style: dotted solid;
+
+If the border-style property has four values:
+
+border-style: dotted solid double dashed;
+              top border is dotted
+              right border is solid
+              bottom border is double
+              left border is dashed
+
+
+If the border-style property has three values:
+
+border-style: dotted solid double;
+              top border is dotted
+              right and left borders are solid
+              bottom border is double
+
+
+
+If the border-style property has two values:
+
+border-style: dotted solid;
+              top and bottom borders are dotted
+              right and left borders are solid
+
+
+
+If the border-style property has one value:
+
+border-style: dotted;
+              all four borders are dotted
+
+
+
+
+5. border: 5px solid red;
+
+
+6. border-left: 6px solid red;
+   background-color: lightgrey;
+   (and)
+   border-left-width: 15px;
+
+
+7. border-bottom: 6px solid red;
+   background-color: lightgrey;
+   (and)
+   border-right-color: #ff0000;
+
+
+8. border-radius: 5px;
+
+9. border: 2px solid red;
+   border-radius: 12px;
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+CSS Margins
+
+
+Margin - Individual Sides
+CSS has properties for specifying the margin for each side of an element:
+
+margin-top
+margin-right
+margin-bottom
+margin-left
+
+
+=> auto - the browser calculates the margin
+
+margin: auto;
+
+
+
+If the margin property has four values:
+
+margin: 5px 7px 9px 10px;
+        top margin is 5px
+        right margin is 7px
+        bottom margin is 9px
+        left margin is 10px
+
+
+
+If the margin property has three values:
+
+margin: 25px 50px 75px;
+        top margin is 25px
+        right and left margins are 50px
+        bottom margin is 75px
+
+
+
+If the margin property has two values:
+
+margin: 25px 50px;
+        top and bottom margins are 25px
+        right and left margins are 50px
+
+
+
+
+If the margin property has one value:
+
+margin: 25px;
+        all four margins are 25px
+
+
+
+
+
+
+
+
+inherit Value
+
+div {
+     border: 1px solid red;
+     margin-left: 100px;
+    }
+
+p#one {
+       margin-left: inherit;
+      }
+
+<div>
+<p id="one">Disney is micky</p>
+</div>
+
+
+
+
+
+
+--------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+CSS Padding
+
+
+Padding - Individual Sides
+CSS has properties for specifying the padding for each side of an element:
+
+padding-top
+padding-right
+padding-bottom
+padding-left
+
+
+
+
+
+If the padding property has four values:
+
+padding: 25px 50px 75px 100px;
+         top padding is 25px
+         right padding is 50px
+         bottom padding is 75px
+         left padding is 100px
+
+
+
+
+If the padding property has three values:
+
+padding: 25px 50px 75px;
+         top padding is 25px
+         right and left paddings are 50px
+         bottom padding is 75px
+
+
+
+
+
+If the padding property has two values:
+
+padding: 25px 50px;
+         top and bottom paddings are 25px
+         right and left paddings are 50px
+
+
+
+
+If the padding property has one value:
+
+padding: 25px;
+         all four paddings are 25px
+
+
+
+
+Eg=>
+
+div#one{
+  width: 400px;
+  background-color: yellow;
+}
+
+div#two{
+  width: 400px;
+  padding: 35px;
+  background-color: powderblue;
+}
+
+
+
+
+Eg=>
+
+div#one {
+  width: 300px;
+  background-color: yellow;
+}
+
+div#two {
+  width: 300px;
+  padding: 25px;
+  background-color: lightblue;
+}
+
+div#three {
+  width: 300px;
+  padding: 25px;
+  box-sizing: border-box;
+  background-color: lightblue;
+}
+
+
+
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+CSS Height and Width
+
+
+
+Eg=>
+
+div {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
+
+
+
+
+
+Eg=>
+
+div {
+  max-width: 500px;
+  height: 100px;
+  background-color: powderblue;
+}
+
+
+
+
+
+
+
+--------------------------------------------
+Outline
+
+                 outline-style:dotted;
+	outline-color:red;
+	outline-width:5px;
+	outline-offset:15px;
+
+
+outline : outline: 5px ridge orange;
+
+
+
+
+
+
+

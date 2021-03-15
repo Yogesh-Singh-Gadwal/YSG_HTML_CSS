@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+             width:300px;
+             height: 160px;
+             padding: 15px;
+             border:2px solid grey;
+        }
+    </style>
+    <script>
+           function yestodrop(ev)
+           {
+            ev.preventDefault();
+           }
+           function mydrag(ev)
+           {              
+            ev.dataTransfer.setData("myid",ev.target.id);
+           }
+           function mydrop(ev)
+           {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("myid");
+            ev.target.appendChild(document.getElementById(data));
+           }
+    </script>
+</head>
+<body>
+    <h1>Drag and Drop</h1>
+    <br>
+
+    <div id="ddrop1" ondrop="mydrop(event)" ondragover="yestodrop(event)"></div>
+
+    <br><br>
+
+    <img src="1.jpg" width="280" height="140" id="drag1" draggable="true" ondragstart="mydrag(event)">
+
+</body>
+</html>
